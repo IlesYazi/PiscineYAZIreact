@@ -5,22 +5,20 @@ import { StyleSheet, Text, View } from "react-native";
 import Bouton from "./Components/Bouton";
 import State from "./Components/State";
 import List from "./Components/List";
-import HomePage from "./Screen/HomePage.screen";
-// import { NavigationContainer } from "@react-navigation/native";
+import HomePage_screen from "./Screen/HomePage_screen";
+import { NavigationContainer} from "@react-navigation/native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomePage></HomePage>
+      {/* <HomePage></HomePage>
       <Bouton></Bouton>
       <State></State>
 
-      <List></List>
-      {/* <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="HomePage" component={HomePage} />
-      </Stack.Navigator>
-      </NavigationContainer> */}
+      <List></List> */}
+      <NavigationContainer>
+      {/* <HomePage_screen/> */}
+      </NavigationContainer>
 
       <StatusBar style="auto" />
     </View>

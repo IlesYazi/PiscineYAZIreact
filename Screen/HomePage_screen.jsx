@@ -4,12 +4,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ConnexionPage from "./ConnexionPage.screen";
 import InscriptionPage from "./InscriptionPage.screen";
 
-const HomePage = () => {
+
+const HomePage_screen = () => {
   const Stack = createNativeStackNavigator();
 
   return (
     <View style={styles.container}>
+      
       <Stack.Navigator initialRouteName="ConnexionPage">
+      
         <Stack.Screen name="ConnexionPage" component={ConnexionPage} />
 
         <Stack.Screen name="InscriptionPage" component={InscriptionPage} />
@@ -33,4 +36,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomePage;
+export default HomePage_screen;
