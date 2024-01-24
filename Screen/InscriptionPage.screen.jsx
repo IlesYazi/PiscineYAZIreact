@@ -2,8 +2,13 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import React from "react";
 import { TextInput } from "react-native-paper";
 import { Button } from "react-native-paper";
+import { useNavigation } from "@react-navigation/native";
 
 const InscriptionPage = () => {
+  const navigation = useNavigation();
+  const handleSub = () => {
+    navigation.navigate("Dashboard");
+  };
   return (
     <View style={styles.container}>
       <Image
@@ -32,7 +37,7 @@ const InscriptionPage = () => {
         label="Confirmer mot de passe"
         placeholder="Your confirm password"
       />
-      <Button style={styles.btn}>
+      <Button style={styles.btn} onPress={handleSub}>
         <Text style={styles.txtBtn}>Enregistrer</Text>
       </Button>
     </View>

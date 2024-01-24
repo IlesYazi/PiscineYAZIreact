@@ -39,7 +39,7 @@ const ConnexionPage = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f8f8f8",
+    backgroundColor: "#f0f0f0f0",
     margin: 5,
     borderRadius: 25,
   },
@@ -47,13 +47,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#333",
+    color: "#aa0aaf",
     margin: 5,
   },
   logo: {
     width: 100,
     height: 100,
-    backgroundColor: "#333",
+    backgroundColor: "#ffff",
     borderRadius: 100,
     alignSelf: "center",
     marginTop: 10,
@@ -64,15 +64,15 @@ const styles = StyleSheet.create({
     width: 250,
     margin: 5,
     alignSelf: "center",
-    backgroundColor: "#3498db",
+    backgroundColor: "#f0f0f0",
     color: "#fff",
   },
   txtBtn: {
-    color: "#3498db",
+    color: "#ffff",
   },
   btn: {
     marginTop: 5,
-    backgroundColor: "#333",
+    backgroundColor: "#aa0aaf",
     width: 250,
     color: "red",
     alignSelf: "center",

@@ -10,6 +10,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import ConnexionPage from "./Screen/ConnexionPage.screen";
 import InscriptionPage from "./Screen/InscriptionPage.screen";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Dashboard from "./Screen/Dashboard.screen";
 
 export default function App() {
   const Stack = createNativeStackNavigator()
@@ -24,6 +25,8 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="ConnexionPage">
           <Stack.Screen name="ConnexionPage" component={ConnexionPage} /> 
+          <Stack.Screen name="InscriptionPage" component={InscriptionPage} />
+          <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>
 
@@ -36,8 +39,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
     width:"100%",
     height:"100%"
   },
