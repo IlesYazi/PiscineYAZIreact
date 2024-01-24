@@ -5,11 +5,14 @@ import { StyleSheet, Text, View } from "react-native";
 import Bouton from "./Components/Bouton";
 import State from "./Components/State";
 import List from "./Components/List"
-import { NavigationContainer} from "@react-navigation/native";
+
+import { NavigationContainer } from '@react-navigation/native';
 import ConnexionPage from "./Screen/ConnexionPage.screen";
 import InscriptionPage from "./Screen/InscriptionPage.screen";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 export default function App() {
+  const Stack = createNativeStackNavigator()
   return (
     <View style={styles.container}>
       {/* <HomePage></HomePage>
@@ -17,8 +20,11 @@ export default function App() {
       <State></State>
 
       <List></List> */}
+
       <NavigationContainer>
-        <ConnexionPage/>
+        <Stack.Navigator initialRouteName="ConnexionPage">
+          <Stack.Screen name="ConnexionPage" component={ConnexionPage} /> 
+        </Stack.Navigator>
       </NavigationContainer>
 
       <StatusBar style="auto" />
@@ -32,5 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    width:"100%",
+    height:"100%"
   },
 });

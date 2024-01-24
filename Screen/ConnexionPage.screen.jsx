@@ -7,7 +7,7 @@ const ConnexionPage = () => {
   const navigation = useNavigation();
 
   const handleLogin = () => {
-    navigation.navigate("ConnexionPage");
+    navigation.navigate("Dashboard");
   };
 
   const handleSub = () => {
@@ -21,11 +21,11 @@ const ConnexionPage = () => {
         source={require("../assets/machine-a-cafe.png")}
       />
       <Text style={styles.title}>So, wanna connect ?</Text>
-      <TextInput style={styles.inputs} label="Email" placeholder="Your email" />
+      <TextInput style={styles.inputs} label="Email" placeholder="Email" />
       <TextInput
         style={styles.inputs}
         label="Mot de passe"
-        placeholder="Your password"
+        placeholder="Mot de passe"
       />
       <Button style={styles.btn} onPress={handleLogin}>
         <Text style={styles.txtBtn}>Connexion</Text>
