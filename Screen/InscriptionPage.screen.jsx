@@ -10,30 +10,30 @@ const InscriptionPage = () => {
         style={styles.logo}
         source={require("../assets/machine-a-cafe.png")}
       />
-      <Text style={styles.title}>Wanna subscribe ? Got ya !</Text>
+      <Text style={styles.title}>Inscription</Text>
       <TextInput
         style={styles.inputs}
-        label="First Name"
+        label="Prenom"
         placeholder="Your first name"
       />
       <TextInput
         style={styles.inputs}
-        label="Last Name"
+        label="Nom"
         placeholder="Your last name"
       />
       <TextInput style={styles.inputs} label="Email" placeholder="Your email" />
       <TextInput
         style={styles.inputs}
-        label="Password"
+        label="Mot de passe"
         placeholder="Your password"
       />
       <TextInput
         style={styles.inputs}
-        label="Confirm Password"
+        label="Confirmer mot de passe"
         placeholder="Your confirm password"
       />
       <Button style={styles.btn}>
-        <Text style={styles.txtBtn}>Submit</Text>
+        <Text style={styles.txtBtn}>Enregistrer</Text>
       </Button>
     </View>
   );
@@ -49,13 +49,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#333",
+    color: "#aa0aaf",
     margin: 5,
   },
   logo: {
     width: 100,
     height: 100,
-    backgroundColor: "#333",
+    backgroundColor: "#fff",
     borderRadius: 100,
     alignSelf: "center",
     marginTop: 10,
@@ -66,15 +66,15 @@ const styles = StyleSheet.create({
     width: 250,
     margin: 5,
     alignSelf: "center",
-    backgroundColor: "#3498db",
+    backgroundColor: "#f0f0f0",
     color: "#fff",
   },
   txtBtn: {
-    color: "#3498db",
+    color: "#FFF",
   },
   btn: {
     marginTop: 5,
-    backgroundColor: "#333",
+    backgroundColor: "#aa0aaf",
     width: 250,
     color: "red",
     alignSelf: "center",

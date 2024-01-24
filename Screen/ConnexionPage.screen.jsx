@@ -7,11 +7,11 @@ const ConnexionPage = () => {
   const navigation = useNavigation();
 
   const handleLogin = () => {
-    navigation.navigate("Dashboard_Screen");
+    navigation.navigate("ConnexionPage");
   };
 
   const handleSub = () => {
-    navigation.navigate("Subscribe_Screen");
+    navigation.navigate("InscriptionPage");
   };
 
   return (
@@ -24,16 +24,14 @@ const ConnexionPage = () => {
       <TextInput style={styles.inputs} label="Email" placeholder="Your email" />
       <TextInput
         style={styles.inputs}
-        label="Password"
+        label="Mot de passe"
         placeholder="Your password"
       />
       <Button style={styles.btn} onPress={handleLogin}>
-        <Text style={styles.txtBtn}>Submit</Text>
+        <Text style={styles.txtBtn}>Connexion</Text>
       </Button>
       <Button style={styles.btn} onPress={handleSub}>
-        <Text style={styles.txtBtn}>
-          Wait, you don't have an account ? Here come here
-        </Text>
+        <Text style={styles.txtBtn}>Inscription</Text>
       </Button>
     </View>
   );

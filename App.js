@@ -4,9 +4,10 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import Bouton from "./Components/Bouton";
 import State from "./Components/State";
-import List from "./Components/List";
-import HomePage_screen from "./Screen/HomePage_screen";
+import List from "./Components/List"
 import { NavigationContainer} from "@react-navigation/native";
+import ConnexionPage from "./Screen/ConnexionPage.screen";
+import InscriptionPage from "./Screen/InscriptionPage.screen";
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
 
       <List></List> */}
       <NavigationContainer>
-      {/* <HomePage_screen/> */}
+        <ConnexionPage/>
       </NavigationContainer>
 
       <StatusBar style="auto" />
